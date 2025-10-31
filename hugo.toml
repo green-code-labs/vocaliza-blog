@@ -1,0 +1,24 @@
+# Configuração principal do site Hugo
+baseURL = "https://blog.vocaliza.app/"
+languageCode = "pt-br"
+title = "Blog da Vocaliza"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[params]
+  description = "Blog oficial da Vocaliza, IA de atendimento de voz, automação de chamadas e novidades em tecnologia de voz."
+  author = "Vocaliza"
+  dateFormat = "02 Jan 2006"
+  favicon = "/favicon.ico"
+  showReadingTime = true
+  defaultTheme = "light"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+  pagerSize = 10
