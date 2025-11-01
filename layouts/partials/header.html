@@ -1,16 +1,49 @@
-<header style="width:100%; background: #fff; box-shadow: 0 2px 8px rgba(66,133,244,0.07); padding: 0;">
-  <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; padding: 1.5rem 1rem;">
-    <a href="/" style="display:flex; align-items:center; text-decoration:none;gap:8px;">
-      <img src="/logo-vocaliza-oficial.jpg" alt="Logo Vocaliza" style="height:40px;"/>
-      <span style="color:#4285f4; font-family:'Inter', 'Montserrat', Arial, sans-serif; font-weight:700; font-size:1.5rem;">Blog da Vocaliza</span>
+{{- /* Banner de anúncio */ -}}
+<div id="announcement-banner" class="announcement-banner">
+  <div class="announcement-content">
+    <span>🎉 Novo: Integração com WhatsApp Business API disponível</span>
+    <a href="/posts/" class="announcement-link">Saiba mais →</a>
+  </div>
+  <button class="announcement-close" aria-label="Fechar banner" onclick="document.getElementById('announcement-banner').style.display='none'">×</button>
+</div>
+
+<header class="header-enhanced">
+  <div class="header-container">
+    <a href="/" class="logo-enhanced">
+      <img src="/logo-vocaliza-oficial.jpg" alt="Logo Vocaliza" class="logo-img"/>
+      <span class="logo-text">Blog da Vocaliza</span>
     </a>
-    <nav style="margin-left:auto; display:flex; gap:2rem;">
-      <a href="/" style="font-family:'Inter', 'Montserrat', Arial, sans-serif; color:#212121; text-decoration:none; font-weight:500;">Início</a>
-      <a href="/tags/ia/" style="font-family:'Inter', 'Montserrat', Arial, sans-serif; color:#212121; text-decoration:none;">IA</a>
-      <a href="/tags/tutorial/" style="font-family:'Inter', 'Montserrat', Arial, sans-serif; color:#212121; text-decoration:none;">Tutoriais</a>
-      <a href="/sobre/" style="font-family:'Inter', 'Montserrat', Arial, sans-serif; color:#212121; text-decoration:none;">Sobre</a>
-      <a href="/contato/" style="font-family:'Inter', 'Montserrat', Arial, sans-serif; color:#212121; text-decoration:none;">Contato</a>
-      <a href="https://vocaliza.app" style="background:#4285f4; color:#fff; border-radius:20px; padding:0.4rem 1.1rem; font-weight:600; text-decoration:none; margin-left:1.5rem;">Testar grátis</a>
+    
+    {{- /* Busca no header */ -}}
+    <div class="search-container">
+      <button class="search-toggle" id="search-toggle" aria-label="Abrir busca">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+      </button>
+      <div class="search-dropdown" id="search-dropdown">
+        <input type="search" id="search-input" placeholder="Buscar artigos..." aria-label="Campo de busca"/>
+        <div id="search-results"></div>
+      </div>
+    </div>
+    
+    <nav class="nav-enhanced">
+      <a href="/" class="nav-link">Início</a>
+      <a href="/posts/" class="nav-link">Blog</a>
+      <a href="/sobre/" class="nav-link">Sobre</a>
+      <a href="/contato/" class="nav-link">Contato</a>
+      <a href="https://vocaliza.app" class="nav-cta" target="_blank" rel="noopener">Testar grátis</a>
     </nav>
+    
+    {{- /* Dark mode toggle */ -}}
+    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema escuro">
+      <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+    
+    {{- /* Menu mobile toggle */ -}}
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu mobile">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>

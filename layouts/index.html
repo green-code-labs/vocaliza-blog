@@ -12,6 +12,9 @@
 </div>
 {{- end }}
 
+{{- /* Seção "Como Funciona" */ -}}
+{{- partial "how_it_works.html" . }}
+
 {{- $pages := union .RegularPages .Sections }}
 {{- if .IsHome }}
   {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}

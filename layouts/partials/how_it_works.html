@@ -1,0 +1,176 @@
+{{- /* Seção "Como Funciona" Visual */ -}}
+<section class="how-it-works-section">
+  <div class="container">
+    <h2 class="section-title">⚙️ Como Funciona a Vocaliza</h2>
+    <p class="section-subtitle">Do zero ao atendimento automatizado em 4 passos simples</p>
+    
+    <div class="steps-timeline">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-icon">🔌</div>
+        <h3>Conecta</h3>
+        <p>Integre com seu CRM, telefonia e sistemas em minutos via API</p>
+      </div>
+      
+      <div class="step-arrow">→</div>
+      
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-icon">🧠</div>
+        <h3>Treina</h3>
+        <p>Configure scripts e comportamentos da IA de forma visual</p>
+      </div>
+      
+      <div class="step-arrow">→</div>
+      
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-icon">🚀</div>
+        <h3>Publica</h3>
+        <p>Lance seu agente de voz em produção com um clique</p>
+      </div>
+      
+      <div class="step-arrow">→</div>
+      
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <div class="step-icon">📊</div>
+        <h3>Escala</h3>
+        <p>Monitore resultados e expanda para milhares de chamadas</p>
+      </div>
+    </div>
+    
+    <div class="cta-center">
+      <a href="https://vocaliza.app" target="_blank" rel="noopener" class="cta-button cta-large">
+        Começar Agora Grátis →
+      </a>
+      <p class="cta-note">✅ 14 dias grátis • Sem cartão • Cancele quando quiser</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.how-it-works-section {
+  margin: 5rem auto;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.steps-timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 968px) {
+  .steps-timeline {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .step-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+.step-card {
+  flex: 1;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--vocaliza-primary);
+}
+
+.step-number {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--vocaliza-primary), var(--vocaliza-primary-dark));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+.step-icon {
+  font-size: 3rem;
+  margin: 1rem 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+.step-card:nth-child(2) .step-icon { animation-delay: 0.3s; }
+.step-card:nth-child(4) .step-icon { animation-delay: 0.6s; }
+.step-card:nth-child(6) .step-icon { animation-delay: 0.9s; }
+
+.step-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.step-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.step-arrow {
+  color: var(--vocaliza-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.cta-center {
+  text-align: center;
+}
+
+.cta-large {
+  font-size: 1.125rem;
+  padding: 1.125rem 2.5rem;
+}
+
+.cta-note {
+  margin-top: 1rem;
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+</style>

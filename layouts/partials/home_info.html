@@ -1,13 +1,76 @@
 {{- with site.Params.homeInfoParams }}
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>{{ .Title | markdownify }}</h1>
-    </header>
-    <div class="entry-content">
-        {{ .Content | markdownify }}
+<article class="first-entry home-info-enhanced">
+    <div class="hero-container">
+        <div class="hero-content">
+            <header class="entry-header">
+                <h1>{{ .Title | markdownify }}</h1>
+            </header>
+            <div class="entry-content">
+                {{ .Content | markdownify }}
+            </div>
+            
+            {{- /* Estatísticas em destaque */ -}}
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500K+</div>
+                    <div class="stat-label">Chamadas Processadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label">Redução de Custos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Disponibilidade</div>
+                </div>
+            </div>
+            
+            {{- /* Badges de confiança */ -}}
+            <div class="trust-badges">
+                <div class="badge-item">
+                    <span class="badge-icon">🔒</span>
+                    <span class="badge-text">100% LGPD</span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon">⚡</span>
+                    <span class="badge-text">Deploy 24h</span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon">🇧🇷</span>
+                    <span class="badge-text">Made in Brazil</span>
+                </div>
+            </div>
+            
+            <footer class="entry-footer">
+                {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+            </footer>
+        </div>
+        
+        <div class="hero-visual">
+            {{- partial "hero_illustration.html" . -}}
+        </div>
     </div>
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
-    </footer>
 </article>
+
+{{- /* Mini-cases em cards */ -}}
+<section class="use-cases-section">
+    <h2 class="section-title">🎯 Casos de Uso Reais</h2>
+    <div class="use-cases-grid">
+        <div class="use-case-card">
+            <div class="use-case-icon">🛒</div>
+            <h3>E-commerce</h3>
+            <p>Confirmação de pedidos e rastreamento automatizado com 90% de satisfação</p>
+        </div>
+        <div class="use-case-card">
+            <div class="use-case-icon">🏥</div>
+            <h3>Saúde</h3>
+            <p>Agendamento de consultas e lembretes que reduzem no-show em 40%</p>
+        </div>
+        <div class="use-case-card">
+            <div class="use-case-icon">💰</div>
+            <h3>Financeiro</h3>
+            <p>Cobrança inteligente que aumenta recuperação em 35%</p>
+        </div>
+    </div>
+</section>
 {{- end -}}
