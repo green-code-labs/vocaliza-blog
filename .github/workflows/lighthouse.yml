@@ -1,0 +1,19 @@
+name: Lighthouse Audit
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # diário 04:00 UTC
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Lighthouse on Production
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            https://blog.vocaliza.app/
+            https://blog.vocaliza.app/posts/
+          uploadArtifacts: true
+          temporaryPublicStorage: true

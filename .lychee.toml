@@ -1,0 +1,19 @@
+# Configuração do Lychee (Link Checker)
+# Documentação: https://lychee.cli.rs
+
+exclude_path = ["public/index.json", "public/index.xml"]
+# Ignorar verificações em tags sociais que frequentemente bloqueiam bots
+exclude = [
+  "https://twitter.com/*",
+  "https://www.facebook.com/*",
+  "https://www.linkedin.com/*",
+  "https://wa.me/*"
+]
+# Tratar 429 como sucesso (rate limit)
+accept = [429]
+# Tempo limite e tentativas
+max_redirects = 5
+threads = 4
+timeout = 20
+retry_wait_time = 2
+retry_count = 2
