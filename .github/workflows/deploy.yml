@@ -40,7 +40,7 @@ jobs:
         run: |
           echo "Working directory: $(pwd)"
           ls -la
-          hugo --gc --minify --debug --verbose
+          hugo --gc --minify --logLevel debug
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
