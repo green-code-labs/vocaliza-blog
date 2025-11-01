@@ -168,11 +168,4 @@
   <script defer src="{{ $enhancementsJS.RelPermalink }}"></script>
 {{- end }}
 
-{{- /* Custom CSS Enhancements */ -}}
-{{- $enhancementsCSS := resources.Get "css/extended/enhancements.css" }}
-{{- if $enhancementsCSS }}
-  {{- $enhancementsCSS := $enhancementsCSS | minify }}
-  <link rel="stylesheet" href="{{ $enhancementsCSS.RelPermalink }}">
-{{- end }}
-
 {{- /* Head custom content area end */ -}}
