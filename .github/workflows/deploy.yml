@@ -5,60 +5,7 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true  # necessário se o tema for submódulo
-          fetch-depth: 0    # necessário para gerar datas a partir de commits
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.152.2'
-          extended: true
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Build site
-        run: hugo --gc --minify
-
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-name: Deploy Hugo site to GitHub Pages
-
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
-
-# Allow one concurrent deployment
+# One concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -75,23 +22,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch PaperMod if it's a submodule
+          submodules: true  # busca tema se for submódulo
           fetch-depth: 0
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.152.2'
           extended: true
 
-      - name: Build
-        run: |
-          hugo --gc --minify
+      - name: Show Hugo version
+        run: hugo version
 
-      - name: Upload artifact
+      - name: Build site (debug)
+        env:
+          HUGO_ENV: production
+        run: |
+          echo "Working directory: $(pwd)"
+          ls -la
+          hugo --gc --minify --debug --verbose
+
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
