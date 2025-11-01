@@ -1,0 +1,18 @@
+<section style="width:100%; background:#f7f7fa; padding:3rem 0; border-bottom:1px solid #ededed;">
+  <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:2rem;">
+    <div style="flex:1;min-width:260px;">
+      <h1 style="font-size:2.6rem;color:#212121;font-family:'Inter','Montserrat',sans-serif;font-weight:700;margin:0 0 1.5rem 0;">
+        Automatize ligações e foque no que importa
+      </h1>
+      <p style="font-size:1.22rem;color:#727272;margin-bottom:2rem;">
+        O <span style="color:#4285f4;font-weight:600;">Vocaliza</span> cria agentes de IA que atendem as chamadas do seu negócio com voz natural, 24h, escalando atendimento, reduzindo custos e encantando clientes.
+      </p>
+      <a href="https://vocaliza.app" style="background:#4285f4;color:#fff;font-weight:600;border-radius:12px;padding:0.7rem 2.2rem;font-size:1.05rem;text-decoration:none;box-shadow:0 2px 6px #4285f422;">
+        Teste grátis
+      </a>
+    </div>
+    <div style="flex:1;min-width:260px;display:flex;justify-content:center;">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=400&q=80" alt="Tech Voice AI" style="border-radius:18px;max-width:330px;box-shadow:0 4px 20px #4285f433;">
+    </div>
+  </div>
+</section>

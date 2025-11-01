@@ -1,24 +1,173 @@
-# Configuração principal do site Hugo
-baseURL = "https://blog.vocaliza.app/"
-languageCode = "pt-br"
-title = "Blog da Vocaliza"
-theme = "PaperMod"
+baseURL = 'https://blog.vocaliza.app/'
+languageCode = 'pt-br'
+title = 'Blog da Vocaliza - IA de Voz e Automação de Atendimento'
+theme = 'PaperMod'
 enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = false
 
-[params]
-  description = "Blog oficial da Vocaliza, IA de atendimento de voz, automação de chamadas e novidades em tecnologia de voz."
-  author = "Vocaliza"
-  dateFormat = "02 Jan 2006"
-  favicon = "/favicon.ico"
-  showReadingTime = true
-  defaultTheme = "light"
+googleAnalytics = ""  # Insira aqui seu ID GA4 (ex.: G-XXXXXXXXXX)
 
-[markup]
-  [markup.goldmark.renderer]
-    unsafe = true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
+# Paginação
 [pagination]
   pagerSize = 10
+
+# Sitemap otimizado para SEO
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.7
+
+# Parâmetros principais
+[params]
+  env = "production"
+  title = "Blog da Vocaliza"
+  description = "Blog oficial da Vocaliza: tudo sobre IA de voz, automação de atendimento, inteligência artificial conversacional e transformação digital no relacionamento com clientes."
+  keywords = ["Vocaliza", "IA de voz", "inteligência artificial", "automação de atendimento", "chatbot de voz", "call center AI", "reconhecimento de fala", "NLP", "customer service", "atendimento automatizado", "assistente virtual por voz"]
+  author = "Equipe Vocaliza"
+  images = ["/logo-vocaliza-oficial.jpg"]
+  DateFormat = "02 de January de 2006"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowShareButtons = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  comments = false
+  showtoc = true
+  tocopen = false
+  themeColor = "#4285f4"
+  
+  # Newsletter (opcional)
+  [params.newsletter]
+    enabled = true
+    provider = "mailchimp"
+    action = "" # Defina a URL de ação do seu formulário (Mailchimp/ConvertKit)
+  
+  # SEO e Analytics
+  [params.analytics]
+    [params.analytics.google]
+      SiteVerificationTag = ""  # Adicionar Google Search Console verification tag
+    [params.analytics.bing]
+      SiteVerificationTag = ""  # Adicionar Bing Webmaster verification tag
+  
+  # Homepage/Profile Mode
+  [params.homeInfoParams]
+    Title = "Blog da Vocaliza 🎙️"
+    Content = """
+    Bem-vindo ao blog oficial da **Vocaliza**, sua fonte de informações sobre **inteligência artificial de voz**, **automação de atendimento** e as melhores práticas para transformar a experiência do cliente com tecnologia.
+    
+    Descubra como empresas estão revolucionando seu atendimento com IA conversacional.
+    """
+
+  # Botões de ação
+  [[params.homeInfoParams.Buttons]]
+    name = "Começar Leitura"
+    url = "/posts"
+  
+  [[params.homeInfoParams.Buttons]]
+    name = "Conhecer a Vocaliza"
+    url = "https://vocaliza.app"
+
+  # Social/Share Icons
+  [[params.socialIcons]]
+    name = "website"
+    url = "https://vocaliza.app"
+
+  # Configurações de assets
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+    safari_pinned_tab = "/safari-pinned-tab.svg"
+    disableFingerprinting = false
+
+  # Cover image
+  [params.cover]
+    linkFullImages = true
+    responsiveImages = true
+
+# Menu de navegação
+[menu]
+  [[menu.main]]
+  name = "Início"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Sobre"
+  url = "/sobre/"
+  weight = 3
+
+  [[menu.main]]
+  name = "Contato"
+  url = "/contato/"
+  weight = 4
+
+  [[menu.main]]
+  name = "Plataforma"
+  url = "https://vocaliza.app"
+  weight = 5
+
+# Outputs para SEO
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+# Markup e rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    lineNos = false
+    noClasses = false
+    style = 'monokai'
+    tabWidth = 2
+
+# Taxonomies para SEO
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Privacy e GDPR
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+  [privacy.instagram]
+    disable = false
+  [privacy.x]
+    enableDNT = true
+  [privacy.vimeo]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+# Minify para performance
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false

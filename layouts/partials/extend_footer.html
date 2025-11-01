@@ -1,0 +1,20 @@
+{{- /* Footer custom content area start */ -}}
+{{- /* Newsletter (optional) */ -}}
+{{ with .Site.Params.newsletter }}
+  {{ if .enabled }}
+    <section class="newsletter">
+      <div class="newsletter__inner">
+        <h3 class="newsletter__title">Receba novidades sobre IA de voz</h3>
+        <p class="newsletter__desc">Envio quinzenal. Sem spam, apenas conteúdo prático e novidades da Vocaliza.</p>
+        <form class="newsletter__form" action="{{ .action }}" method="post" target="_blank" novalidate>
+          <input type="email" name="EMAIL" class="newsletter__input" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="newsletter__btn">Quero receber</button>
+        </form>
+        {{ if not .action }}
+          <p class="newsletter__hint">Configurar em <code>hugo.toml</code> → <code>[params.newsletter]</code> (defina <code>action</code> com a URL do seu provedor).</p>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+{{- /* Footer custom content area end */ -}}
