@@ -34,6 +34,17 @@ jobs:
       - name: Show Hugo version
         run: hugo version
 
+      - name: Debug - Check theme files
+        run: |
+          echo "=== Checking submodules ==="
+          git submodule status
+          echo "=== Checking theme directory ==="
+          ls -la themes/
+          echo "=== Checking PaperMod assets ==="
+          ls -la themes/PaperMod/assets/ || echo "PaperMod assets not found"
+          echo "=== Checking PaperMod layouts ==="
+          ls -la themes/PaperMod/layouts/partials/ || echo "PaperMod layouts not found"
+
       - name: Build site (debug)
         env:
           HUGO_ENV: production
