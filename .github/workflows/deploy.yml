@@ -22,8 +22,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # busca tema e seus submódulos
           fetch-depth: 0
+
+        - name: Checkout submodules
+          run: |
+            git submodule update --init --recursive --depth 1
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
