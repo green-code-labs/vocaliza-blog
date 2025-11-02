@@ -13,18 +13,31 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Build site (Hugo) for local link checks
+      - name: Checkout submodules
+        run: |
+          git submodule update --init --recursive --depth 1
+
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.152.2'
           extended: true
-      - run: hugo --gc --minify
+
+      - name: Build site (Hugo)
+        run: |
+          echo "Working directory: $(pwd)"
+          ls -la
+          ls -la themes/ || true
+          ls -la themes/PaperMod || true
+          hugo --gc --minify
 
       - name: Lychee Link Checker
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --verbose --no-progress --base .\public --config .lychee.toml "public/**/*.html"
+          args: --verbose --no-progress --base ./public --config .lychee.toml "public/**/*.html"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
