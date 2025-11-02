@@ -1,48 +1,59 @@
-/* Minimal, theme-friendly tweaks: keep PaperMod look, fix spacing, fonts, and responsiveness without breaking dark mode. */
+/* Minimal, professional blog styling - respects PaperMod theme and dark mode */
 
-/* Typography - use Inter if available */
+/* Use system fonts for better performance */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.7;
 }
 
-/* Post cards: subtle elevation using theme variables so dark mode stays correct */
+/* Subtle card elevation using theme variables */
 .post-entry,
 .first-entry {
   background: var(--entry);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  border-radius: 10px;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .post-entry:hover,
 .first-entry:hover {
   transform: translateY(-2px);
-  border-color: rgba(125, 125, 125, .25);
-  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
 }
 
-/* Headings tighter and readable */
+/* Headings: tighter line-height */
 .entry-header h2,
-.post-content h1 { line-height: 1.25; }
+.post-title,
+.post-content h1,
+.post-content h2 { 
+  line-height: 1.3; 
+}
 
-/* Images and embeds responsive */
+/* Responsive media */
 .post-content img,
 .post-content video,
-.post-content iframe { max-width: 100%; height: auto; border-radius: 8px; }
+.post-content iframe { 
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
 
-/* Table of contents spacing */
-.toc { border-radius: 10px; }
+/* Code blocks with monospace font stack */
+pre, code { 
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; 
+}
+
+/* Pagination and TOC polish */
+.toc { border-radius: 8px; }
 .toc a:hover { text-decoration: none; }
-
-/* Pagination: align with theme */
 .pagination a,
-.pagination span { border-radius: 8px; }
+.pagination span { border-radius: 6px; }
 
-/* Code blocks honor theme colors */
-pre, code { font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
-
-/* Reduce excessive margins on small screens */
+/* Mobile: reduce padding */
 @media (max-width: 768px) {
-  .post-content { padding-left: 1rem; padding-right: 1rem; }
+  .post-content,
+  .page-content { 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+  }
 }
