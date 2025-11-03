@@ -6,14 +6,7 @@
 </div>
 {{- end }}
 
-{{- if site.Params.homeInfoParams }}
-<div class="home-info" style="max-width: 900px; margin: 3rem auto; padding: 0 1.5rem;">
-  {{- partial "home_info.html" . }}
-</div>
-{{- end }}
-
-{{- /* Seção "Como Funciona" */ -}}
-{{- partial "how_it_works.html" . }}
+{{/* Intro e seções especiais removidas para homepage minimalista */}}
 
 {{- $pages := union .RegularPages .Sections }}
 {{- if .IsHome }}
@@ -22,16 +15,7 @@
 {{- end }}
 {{- $paginator := .Paginate $pages }}
 
-{{- if and .IsHome site.Params.homeInfoParams }}
-<header class="page-header" style="max-width: 900px; margin: 2rem auto 1rem; padding: 0 1.5rem;">
-  <h2 style="font-family: 'Inter', sans-serif; font-size: 2rem; font-weight: 700; color: #1e293b; margin-bottom: 0.5rem;">
-    📝 Últimos Artigos
-  </h2>
-  <p style="color: #64748b; font-size: 1.0625rem;">
-    Fique por dentro das novidades em IA de voz e automação de atendimento
-  </p>
-</header>
-{{- end }}
+{{/* Cabeçalho de "Últimos Artigos" removido */}}
 
 <div id="content" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
   {{- if eq $paginator.NumberOfElements 0 }}

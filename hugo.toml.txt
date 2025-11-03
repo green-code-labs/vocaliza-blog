@@ -53,23 +53,7 @@ googleAnalytics = ""  # Insira aqui seu ID GA4 (ex.: G-XXXXXXXXXX)
     [params.analytics.bing]
       SiteVerificationTag = ""  # Adicionar Bing Webmaster verification tag
 
-  # Homepage / Profile Mode
-  [params.homeInfoParams]
-    Title = "Blog da Vocaliza 🎙️"
-    Content = """
-    Bem-vindo ao blog oficial da **Vocaliza**, sua fonte de informações sobre **inteligência artificial de voz**, **automação de atendimento** e as melhores práticas para transformar a experiência do cliente com tecnologia.
-    
-    Descubra como empresas estão revolucionando seu atendimento com IA conversacional.
-    """
-
-  # Botões de ação
-  [[params.homeInfoParams.Buttons]]
-    name = "Começar Leitura"
-    url = "/posts"
-  
-  [[params.homeInfoParams.Buttons]]
-    name = "Conhecer a Vocaliza"
-    url = "https://vocaliza.app"
+  # HomeInfo desativado (removido)
 
   # Social / Share Icons
   [[params.socialIcons]]
