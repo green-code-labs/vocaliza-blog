@@ -58,6 +58,12 @@ Prefere testar por conta própria primeiro? Oferecemos **14 dias de teste gráti
 - **Parcerias**: parcerias@vocaliza.app
 - **Geral**: contato@vocaliza.app
 
+#### 🧭 Canais por Assunto
+- Dúvidas sobre planos, preços e proposta: comercial@vocaliza.app
+- Integrações técnicas e APIs: suporte@vocaliza.app (assunto: Integração)
+- Co-marketing e alianças: parcerias@vocaliza.app
+- Privacidade e LGPD: contato@vocaliza.app (assunto: LGPD)
+
 #### 🌐 Links Oficiais
 - **Website**: [vocaliza.app](https://vocaliza.app)  
 - **Blog**: [blog.vocaliza.app](https://blog.vocaliza.app)  
@@ -73,6 +79,37 @@ Prefere testar por conta própria primeiro? Oferecemos **14 dias de teste gráti
 - **Segunda a Sexta**: 9h às 18h (horário de Brasília)
 - **Fim de semana e feriados**: Respondemos por email, mas com prazo maior
 - **Emergências (clientes Enterprise)**: Suporte 24/7 disponível
+
+#### 🕒 Tempos de Resposta (SLA Padrão)
+- Comercial: até 1 dia útil
+- Suporte técnico (não crítico): 4–8h úteis
+- Incidentes críticos (Enterprise): resposta em até 1h, comunicação contínua
+
+---
+
+### 📞 Agendar uma Demo
+
+Quer avaliar a Vocaliza de forma prática? Agende uma conversa com um especialista:
+
+- Demonstração personalizada de 30–45 minutos
+- Avaliação do seu caso e dos fluxos de atendimento
+- Roteiro de implantação sugerido e próximos passos
+
+👉 [Agendar demo agora](https://vocaliza.app#demo)
+
+---
+
+### 🧾 Faturamento e Jurídico
+
+- Solicitações de NFe/boletos: contato@vocaliza.app (assunto: Financeiro)
+- Acordos de confidencialidade (NDA) e DPA (LGPD): solicite via contato@vocaliza.app
+- Contratos Enterprise e SLAs sob medida: comercial@vocaliza.app
+
+---
+
+### 🌍 Onde Estamos
+
+Atendimento 100% remoto, com operação baseada no Brasil. Reuniões podem ser realizadas por Google Meet ou plataforma de sua preferência.
 
 ---
 

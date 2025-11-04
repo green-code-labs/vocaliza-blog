@@ -147,6 +147,73 @@ Experimente a Vocaliza **gratuitamente por 14 dias** — sem cartão de crédito
 
 ---
 
+### 🧭 Nossa História (Linha do Tempo)
+
+- 2024 Q2 — Ideia e primeiros protótipos de agentes de IA de voz
+- 2024 Q3 — Primeiras POCs com empresas de saúde e serviços
+- 2024 Q4 — Lançamento beta fechado, foco em estabilidade e integrações
+- 2025 — Expansão de recursos, multilíngue, melhorias em qualidade de voz e orquestração
+
+### 👥 Quem Somos (Equipe e Cultura)
+
+- Equipe enxuta e obsessiva por experiência do cliente
+- Cultura de produto: ciclos curtos, muita escuta ativa de usuários e dados
+- Suporte próximo e em português, com foco em resultado e não só ferramenta
+
+### 🔗 Integrações Comuns
+
+- Telefonia: Twilio, SIP Trunk (sob consulta)
+- CRMs: HubSpot, Pipedrive, Salesforce (via API/integração custom)
+- Atendimento/Helpdesk: Zendesk, Freshdesk (webhooks)
+- Calendários: Google Calendar, Microsoft 365
+- Notificações: Email, Webhooks, Slack (sob medida)
+
+### 🧱 Arquitetura Resumida (Alta Nível)
+
+1) Recebimento de chamada (PSTN/SIP) → 2) Captura de áudio em tempo real → 3) STT → 4) NLP/LLM (intenção e contexto) → 5) Ações (APIs) → 6) Resposta por TTS → 7) Logs e métricas
+
+- Baixa latência com pipeline otimizado e streaming bidirecional
+- Observabilidade: métricas de chamadas, latência, taxa de sucesso por intenção
+- Failover e transferências para humano quando necessário
+
+### 🔒 Segurança, Privacidade e LGPD
+
+- Minimização de dados: coletamos apenas o necessário para a operação
+- Criptografia em trânsito (HTTPS/TLS) e em repouso quando aplicável
+- Controles de acesso por papel (admin, operador, visão somente leitura)
+- Retenção configurável de gravações e logs sob demanda
+- Acordos de confidencialidade (NDA) e tratamento de dados sob solicitação
+
+Para solicitar um DPA (Acordo de Processamento de Dados) ou esclarecer dúvidas sobre privacidade, fale com nosso time pelo [formulário de contato](/contato/) informando o assunto "LGPD".
+
+### 📐 SLAs e Suporte
+
+- Starter/Business: atendimento em horário comercial (9h–18h BRT)
+- Enterprise: opções de SLA ampliado e suporte 24/7 por canal dedicado
+- Base de conhecimento e exemplos para acelerar seu go-live
+
+### 📈 Como Medimos Sucesso
+
+- Taxa de resolução na primeira chamada (FCR)
+- Redução de TMA/TME por fluxo automatizado
+- Custo por contato vs. baseline humano
+- Satisfação do cliente (CSAT/NPS)
+- Tempo de implantação até primeiro valor (TTFV)
+
+### 🧩 Casos de Uso em Detalhe
+
+- Agendamentos e confirmações: clínicas, serviços de campo, educação
+- Cobrança amigável: lembretes, acordos simples, confirmação de pagamentos
+- Qualificação de leads: coleta de dados, roteamento inteligente, priorização
+- Pesquisas de satisfação (pós-atendimento) com ramificações por resposta
+
+### 🗞️ Para Imprensa e Parcerias
+
+- Solicite press kit, logotipos e release em [contato@vocaliza.app](mailto:contato@vocaliza.app)
+- Parcerias comerciais e integrações: [parcerias@vocaliza.app](mailto:parcerias@vocaliza.app)
+
+---
+
 **Dúvidas? Fale Conosco:**  
 Tem perguntas ou quer saber mais sobre como a Vocaliza pode transformar seu negócio?  
 [Entre em contato](/contato/) ou acesse nossa [plataforma oficial](https://vocaliza.app)
