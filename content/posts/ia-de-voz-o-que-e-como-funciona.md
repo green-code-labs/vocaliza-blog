@@ -1,6 +1,6 @@
 ---
 title: "IA de Voz: O Que É e Como Funciona a Inteligência Artificial Conversacional"
-date: 2025-10-31T12:00:00-03:00
+date: 2025-08-22T09:00:00-03:00
 draft: false
 description: "Entenda o que é IA de voz, como funciona a tecnologia de reconhecimento de fala, processamento de linguagem natural e síntese de voz que revoluciona o atendimento ao cliente."
 tags: ["IA de Voz", "Inteligência Artificial", "Tecnologia", "NLP", "Speech Recognition", "Text-to-Speech"]

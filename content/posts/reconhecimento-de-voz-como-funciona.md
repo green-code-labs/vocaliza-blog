@@ -1,6 +1,6 @@
 ---
 title: "Reconhecimento de Voz: Como Funciona a Tecnologia Por Trás de Alexa e Siri"
-date: 2025-10-27T10:00:00-03:00
+date: 2025-09-05T14:00:00-03:00
 draft: false
 description: "Descubra como funciona o reconhecimento de voz (speech-to-text), a tecnologia por trás de Alexa, Siri, Google Assistant e Vocaliza. Aprenda sobre ASR, modelos acústicos e processamento de linguagem."
 keywords: ["reconhecimento de voz", "speech to text", "ASR", "automatic speech recognition", "alexa", "siri", "google assistant", "ia de voz"]

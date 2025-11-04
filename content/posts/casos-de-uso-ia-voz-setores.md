@@ -1,6 +1,6 @@
 ---
 title: "10 Casos de Uso de IA de Voz para Diferentes Setores em 2025"
-date: 2025-10-31T16:00:00-03:00
+date: 2025-10-28T16:00:00-03:00
 draft: false
 description: "Explore 10 aplicações práticas de inteligência artificial de voz em diferentes setores: e-commerce, saúde, financeiro, educação e mais. Descubra como automatizar seu atendimento."
 tags: ["Casos de Uso", "IA de Voz", "Setores", "E-commerce", "Saúde", "Educação", "Automação"]

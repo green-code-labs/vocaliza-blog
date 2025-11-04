@@ -52,10 +52,27 @@ Prefere testar por conta própria primeiro? Oferecemos **14 dias de teste gráti
 
 ### 📍 Outras Formas de Contato
 
-🌐 **Website Oficial**: [vocaliza.app](https://vocaliza.app)  
-📝 **Blog**: [blog.vocaliza.app](https://blog.vocaliza.app)  
-💼 **LinkedIn**: (em breve)  
-📧 **Email**: (em breve)
+#### 📧 Email
+- **Comercial/Vendas**: comercial@vocaliza.app
+- **Suporte Técnico**: suporte@vocaliza.app
+- **Parcerias**: parcerias@vocaliza.app
+- **Geral**: contato@vocaliza.app
+
+#### 🌐 Links Oficiais
+- **Website**: [vocaliza.app](https://vocaliza.app)  
+- **Blog**: [blog.vocaliza.app](https://blog.vocaliza.app)  
+- **Documentação API**: (em breve)
+- **Status da Plataforma**: (em breve)
+
+#### 💼 Redes Sociais
+- **LinkedIn**: [linkedin.com/company/vocaliza](https://linkedin.com/company/vocaliza) (em breve)
+- **Twitter/X**: [@vocalizaapp](https://twitter.com/vocalizaapp) (em breve)
+- **Instagram**: [@vocaliza.app](https://instagram.com/vocaliza.app) (em breve)
+
+#### ⏰ Horário de Atendimento
+- **Segunda a Sexta**: 9h às 18h (horário de Brasília)
+- **Fim de semana e feriados**: Respondemos por email, mas com prazo maior
+- **Emergências (clientes Enterprise)**: Suporte 24/7 disponível
 
 ---
 

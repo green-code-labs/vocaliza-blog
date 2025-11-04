@@ -1,6 +1,6 @@
 ---
 title: "Bem-vindo ao Blog da Vocaliza: O Futuro da Comunicação por IA de Voz"
-date: 2025-10-31T10:00:00-03:00
+date: 2025-08-15T10:00:00-03:00
 draft: false
 description: "Conheça o blog oficial da Vocaliza, sua fonte de informações sobre inteligência artificial de voz, automação de atendimento e as melhores práticas para transformar a experiência do cliente com tecnologia."
 tags: ["Vocaliza", "Blog", "IA de Voz", "Automação", "Customer Experience", "Tecnologia"]

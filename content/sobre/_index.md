@@ -6,9 +6,21 @@ keywords: ["sobre vocaliza", "ia de voz", "automação de chamadas", "plataforma
 
 # Sobre a Vocaliza
 
-## Automatize Ligações e Foque no Que Importa
+## Transformando Atendimento com IA de Voz
 
-A **Vocaliza** é uma plataforma brasileira de **inteligência artificial de voz** que permite criar **agentes de IA que atendem chamadas telefônicas** com conversas que soam completamente naturais. Economize tempo, reduza custos e melhore a experiência do cliente.
+A **Vocaliza** é uma plataforma brasileira de **inteligência artificial de voz** que permite criar **agentes de IA que atendem chamadas telefônicas** com conversas que soam completamente naturais. Fundada em 2024, nascemos com a missão de democratizar o acesso à tecnologia de IA conversacional para empresas de todos os tamanhos.
+
+### 🎯 Nossa Missão
+
+**Revolucionar a comunicação empresarial** tornando a inteligência artificial de voz acessível, natural e eficiente para qualquer negócio que deseje automatizar atendimentos, reduzir custos e escalar operações sem perder a qualidade humana no relacionamento com clientes.
+
+### 💎 Nossos Valores
+
+- **🚀 Inovação Constante**: Estamos sempre na vanguarda da tecnologia de IA de voz
+- **🤝 Foco no Cliente**: Nosso sucesso é medido pelo sucesso dos nossos clientes
+- **📊 Transparência**: Preços claros, relatórios detalhados, sem pegadinhas
+- **🔒 Privacidade**: 100% LGPD compliant, seus dados são seus
+- **🇧🇷 Made in Brazil**: Orgulhosamente desenvolvido por brasileiros para o mercado global
 
 ### 🚀 O Que é a Vocaliza?
 

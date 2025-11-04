@@ -941,6 +941,25 @@ body {
   border: 1px solid var(--border-color);
 }
 
+/* Post cards na homepage - Dark Mode */
+[data-theme="dark"] .post-card {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .post-card:hover {
+  background: var(--card-hover-bg) !important;
+}
+
+[data-theme="dark"] .post-card h2 a {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .post-card .entry-content,
+[data-theme="dark"] .post-card p {
+  color: var(--text-secondary) !important;
+}
+
 /* ================================================
    NEWSLETTER SECTION - MELHORADO
    ================================================ */

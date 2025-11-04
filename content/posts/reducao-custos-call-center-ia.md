@@ -1,6 +1,6 @@
 ---
 title: "Como Reduzir Custos de Call Center em Até 60% com IA de Voz"
-date: 2025-10-31T14:00:00-03:00
+date: 2025-09-18T14:00:00-03:00
 draft: false
 description: "Descubra como a inteligência artificial de voz pode reduzir drasticamente os custos operacionais do seu call center mantendo ou melhorando a qualidade do atendimento ao cliente."
 tags: ["Call Center", "Redução de Custos", "IA de Voz", "ROI", "Gestão", "Automação"]
