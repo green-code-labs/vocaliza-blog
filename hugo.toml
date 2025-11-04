@@ -64,6 +64,11 @@ googleAnalytics = "G-PQKG95ZKF1"
       # Yandex Webmaster verification tag (opcional)
       # Obtenha em: https://webmaster.yandex.com/
       SiteVerificationTag = ""  # Cole aqui o código de verificação do Yandex
+    [params.analytics.hotjar]
+      # Hotjar Site ID para análise de comportamento (heatmaps, recordings, feedback)
+      # Obtenha em: https://insights.hotjar.com/sites
+      # Cole apenas o número do Site ID (ex.: 1234567)
+      siteId = ""  # Cole aqui o Hotjar Site ID
 
   # Social/Share Icons
   [[params.socialIcons]]
