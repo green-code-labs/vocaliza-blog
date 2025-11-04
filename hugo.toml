@@ -40,11 +40,11 @@ googleAnalytics = ""  # Insira aqui seu ID GA4 (ex.: G-XXXXXXXXXX)
   tocopen = false
   themeColor = "#4285f4"
   
-  # Newsletter (opcional)
+  # Newsletter
   [params.newsletter]
     enabled = true
-    provider = "mailchimp"
-    action = "" # Defina a URL de ação do seu formulário (Mailchimp/ConvertKit)
+    provider = "email"
+    action = "mailto:suporte@vocaliza.app?subject=Quero%20receber%20novidades%20do%20blog"
   
   # SEO e Analytics
   [params.analytics]
