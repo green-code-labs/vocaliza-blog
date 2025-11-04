@@ -68,7 +68,7 @@ googleAnalytics = "G-PQKG95ZKF1"
       # Hotjar Site ID para análise de comportamento (heatmaps, recordings, feedback)
       # Obtenha em: https://insights.hotjar.com/sites
       # Cole apenas o número do Site ID (ex.: 1234567)
-      siteId = ""  # Cole aqui o Hotjar Site ID
+      siteId = "6566257"  # Hotjar configurado!
 
   # Social/Share Icons
   [[params.socialIcons]]
