@@ -9,7 +9,7 @@ enableGitInfo = false
 # Google Analytics 4
 # IMPORTANTE: Substitua pelo seu Measurement ID real (formato: G-XXXXXXXXXX)
 # Veja o arquivo CONFIGURACAO_ANALYTICS.md para instruções detalhadas
-googleAnalytics = ""  # Cole aqui seu ID GA4 (ex.: G-ABC123XYZ)
+googleAnalytics = "G-PQKG95ZKF1"
 
 # Paginação
 [pagination]
