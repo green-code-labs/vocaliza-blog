@@ -1,4 +1,19 @@
 {{- /* Head custom content area start */ -}}
+
+{{- /* Google Analytics 4 */ -}}
+{{- partial "google-analytics.html" . }}
+
+{{- /* Search Console and Webmaster Tools Verification */ -}}
+{{- with site.Params.analytics.google.SiteVerificationTag }}
+<meta name="google-site-verification" content="{{ . }}" />
+{{- end }}
+{{- with site.Params.analytics.bing.SiteVerificationTag }}
+<meta name="msvalidate.01" content="{{ . }}" />
+{{- end }}
+{{- with site.Params.analytics.yandex.SiteVerificationTag }}
+<meta name="yandex-verification" content="{{ . }}" />
+{{- end }}
+
 {{- /* SEO Optimization - Vocaliza Blog */ -}}
 
 {{- /* Enhanced Open Graph Tags */ -}}

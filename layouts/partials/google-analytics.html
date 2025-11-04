@@ -1,0 +1,20 @@
+{{- if site.Params.googleAnalytics }}
+<!-- Google tag (gtag.js) - Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.Params.googleAnalytics }}', {
+    'anonymize_ip': {{ site.Privacy.googleAnalytics.anonymizeIP }},
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+
+  {{- if site.Privacy.googleAnalytics.respectDoNotTrack }}
+  if (navigator.doNotTrack == "1" || window.doNotTrack == "1") {
+    window['ga-disable-{{ site.Params.googleAnalytics }}'] = true;
+  }
+  {{- end }}
+</script>
+{{- end }}

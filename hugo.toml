@@ -6,7 +6,10 @@ enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = false
 
-googleAnalytics = ""  # Insira aqui seu ID GA4 (ex.: G-XXXXXXXXXX)
+# Google Analytics 4
+# IMPORTANTE: Substitua pelo seu Measurement ID real (formato: G-XXXXXXXXXX)
+# Veja o arquivo CONFIGURACAO_ANALYTICS.md para instruções detalhadas
+googleAnalytics = ""  # Cole aqui seu ID GA4 (ex.: G-ABC123XYZ)
 
 # Paginação
 [pagination]
@@ -49,9 +52,18 @@ googleAnalytics = ""  # Insira aqui seu ID GA4 (ex.: G-XXXXXXXXXX)
   # SEO e Analytics
   [params.analytics]
     [params.analytics.google]
-      SiteVerificationTag = ""  # Adicionar Google Search Console verification tag
+      # Google Search Console verification tag
+      # Obtenha em: https://search.google.com/search-console/
+      # Cole apenas o código, sem a tag completa (ex.: abc123xyz)
+      SiteVerificationTag = ""  # Cole aqui o código de verificação do Google
     [params.analytics.bing]
-      SiteVerificationTag = ""  # Adicionar Bing Webmaster verification tag
+      # Bing Webmaster Tools verification tag
+      # Obtenha em: https://www.bing.com/webmasters/
+      SiteVerificationTag = ""  # Cole aqui o código de verificação do Bing
+    [params.analytics.yandex]
+      # Yandex Webmaster verification tag (opcional)
+      # Obtenha em: https://webmaster.yandex.com/
+      SiteVerificationTag = ""  # Cole aqui o código de verificação do Yandex
 
   # Social/Share Icons
   [[params.socialIcons]]
