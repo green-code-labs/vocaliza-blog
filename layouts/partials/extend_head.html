@@ -79,7 +79,11 @@
     "logo": {
       "@type": "ImageObject",
       "url": "{{ .Site.BaseURL }}logo-vocaliza-oficial.jpg"
-    }
+    },
+    "sameAs": [
+      "https://blog.vocaliza.app",
+      "https://vocaliza.app"
+    ]
   },
   "potentialAction": {
     "@type": "SearchAction",
@@ -98,7 +102,23 @@
   "sameAs": [
     "https://blog.vocaliza.app"
   ],
-  "description": "Plataforma brasileira de inteligência artificial de voz para automação de chamadas telefônicas"
+  "description": "Plataforma brasileira de inteligência artificial de voz para automação de chamadas telefônicas",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55-11-XXXX-XXXX",
+    "contactType": "Customer Service",
+    "email": "contato@vocaliza.app",
+    "availableLanguage": ["Portuguese"]
+  },
+  "areaServed": "BR",
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Automação de Atendimento com IA de Voz",
+      "description": "Plataforma de IA que automatiza chamadas telefônicas com conversas naturais"
+    }
+  }
 }
 </script>
 {{- else if .IsPage }}
@@ -133,7 +153,16 @@
   "keywords": "{{ delimit . ", " }}",
   {{- end }}
   "articleSection": "{{ .Section }}",
-  "inLanguage": "pt-BR"
+  "inLanguage": "pt-BR",
+  "about": {
+    "@type": "Thing",
+    "name": "Inteligência Artificial de Voz"
+  },
+  "mentions": {
+    "@type": "Organization",
+    "name": "Vocaliza",
+    "url": "https://vocaliza.app"
+  }
 }
 </script>
 {{- end }}

@@ -43,6 +43,9 @@ googleAnalytics = "G-PQKG95ZKF1"
   tocopen = false
   themeColor = "#4285f4"
   
+  # Link principal da plataforma (usado em CTAs)
+  mainWebsiteURL = "https://vocaliza.app"
+  
   # Newsletter
   [params.newsletter]
     enabled = true
